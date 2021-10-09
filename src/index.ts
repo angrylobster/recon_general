@@ -7,5 +7,5 @@ const generateFilePath = (filePath: string): string => path.resolve(__dirname, f
 reportService.generateSummaryAndReconReports(
     generateFilePath('../files/input/proxy.csv'),
     generateFilePath('../files/input/source.csv'),
-    generateFilePath('../iles/output'),
+    generateFilePath('../files/output'),
 );
