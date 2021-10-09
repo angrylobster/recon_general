@@ -1,0 +1,4 @@
+Amt,Descr,Date,ID,Remarks
+30,D,2021-07-03,zodo,Does not exist in source record
+77,F,2021-07-07,zojm,amount is '77' in proxy but '76' in source
+65,G,2021-07-31,zoml,amount is '65' in proxy but '62' in source
