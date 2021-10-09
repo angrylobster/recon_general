@@ -144,7 +144,7 @@ describe('ReportService', () => {
 
         describe('where there is no irreconciliable data', () => {
             beforeEach(async () => {
-                data = await service.generateReconciliationReport(
+                data = await service.generateReconciliationAndSummaryReport(
                     generateFilePath('../dummyData/proxy-2.csv'),
                     generateFilePath('../dummyData/source-6.csv'),
                 );
@@ -159,7 +159,7 @@ describe('ReportService', () => {
 
         describe('where there is 1 row of irreconciliable data', () => {
             beforeEach(async () => {
-                data = await service.generateReconciliationReport(
+                data = await service.generateReconciliationAndSummaryReport(
                     generateFilePath('../dummyData/proxy-1.csv'),
                     generateFilePath('../dummyData/source-6.csv'),
                 );
@@ -174,7 +174,7 @@ describe('ReportService', () => {
 
         describe('where there is more than 1 row of irreconciliable data', () => {
             beforeEach(async () => {
-                data = await service.generateReconciliationReport(
+                data = await service.generateReconciliationAndSummaryReport(
                     generateFilePath('../dummyData/proxy-3.csv'),
                     generateFilePath('../dummyData/source-6.csv'),
                 );
@@ -193,7 +193,7 @@ describe('ReportService', () => {
 
         describe('when there are 2 sources rows processed', () => {
             beforeEach(async () => {
-                data = await service.generateReconciliationReport(
+                data = await service.generateReconciliationAndSummaryReport(
                     generateFilePath('../dummyData/proxy-2.csv'),
                     generateFilePath('../dummyData/source-9.csv'),
                 );

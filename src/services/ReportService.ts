@@ -6,11 +6,7 @@ import { ParserService } from './ParserService';
 export class ReportService {
     constructor(private readonly parser = new ParserService()) {}
 
-    async generateSummaryAndReconReports(proxyPath: string, sourcePath: string, writePath: string): Promise<void> {
-        await this.generateReconciliationReport(proxyPath, sourcePath, writePath);
-    }
-
-    async generateReconciliationReport(
+    async generateReconciliationAndSummaryReport(
         proxyPath: string,
         sourcePath: string,
         writePath?: string,
