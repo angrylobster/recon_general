@@ -15,7 +15,7 @@ export class ReportService {
         if (writePath) {
             await Promise.all([
                 this.parser.writeReconReport(reconData.discrepancies, `${writePath}/recon.csv`),
-                this.parser.writeSummaryReport(reconData, `${writePath}/summary.csv`),
+                this.parser.writeSummaryReport(reconData, `${writePath}/summary.txt`),
             ]);
         }
         return reconData;
